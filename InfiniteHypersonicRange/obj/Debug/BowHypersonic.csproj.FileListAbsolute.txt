@@ -1,0 +1,11 @@
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\bin\Debug\BowHypersonic.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\bin\Debug\BowHypersonic.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\obj\Debug\BowHypersonic.csproj.CoreCompileInputs.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\obj\Debug\BowHypersonic.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\obj\Debug\BowHypersonic.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\bin\Debug\Il2Cppmscorlib.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\bin\Debug\NKHook6.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\bin\Debug\UnhollowerBaseLib.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\obj\Debug\BowHypersonic.csprojAssemblyReference.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\obj\Debug\BowHypersonic.csproj.CopyComplete
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\BowHypersonic\bin\Debug\Newtonsoft.Json.dll

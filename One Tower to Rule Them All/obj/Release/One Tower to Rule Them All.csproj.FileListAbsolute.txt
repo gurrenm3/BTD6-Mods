@@ -1,0 +1,21 @@
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\bin\Release\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\bin\Release\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Release\One Tower to Rule Them All.csprojAssemblyReference.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Release\One Tower to Rule Them All.csproj.CoreCompileInputs.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Release\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Release\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\bin\Release\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\bin\Release\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.csprojAssemblyReference.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.csproj.CoreCompileInputs.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.csprojAssemblyReference.cache
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.csproj.CoreCompileInputs.cache
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\bin\Release\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\bin\Release\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\bin\Release\Gurren Core.dll
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\bin\Release\UnityEngine.CoreModule.dll
+E:\Users\Mrclone2\Documents\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Release\One Tower to Rule Them All.csproj.CopyComplete

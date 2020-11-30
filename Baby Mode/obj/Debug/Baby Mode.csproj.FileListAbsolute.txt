@@ -1,0 +1,9 @@
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\bin\Debug\Baby Mode.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\bin\Debug\Baby Mode.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\bin\Debug\UnhollowerBaseLib.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Debug\Baby Mode.csproj.CoreCompileInputs.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Debug\Baby Mode.csproj.CopyComplete
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Debug\Baby Mode.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Debug\Baby Mode.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Debug\Baby Mode.csprojAssemblyReference.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\bin\Debug\Gurren Core.dll

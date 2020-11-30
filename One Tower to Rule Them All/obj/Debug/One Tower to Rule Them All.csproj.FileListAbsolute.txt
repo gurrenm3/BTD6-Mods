@@ -1,0 +1,12 @@
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\bin\Debug\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\bin\Debug\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Debug\One Tower to Rule Them All.csprojAssemblyReference.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Debug\One Tower to Rule Them All.csproj.CoreCompileInputs.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Debug\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\All Towers Are Supermonkey\obj\Debug\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\bin\Debug\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\bin\Debug\One Tower to Rule Them All.pdb
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Debug\One Tower to Rule Them All.csprojAssemblyReference.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Debug\One Tower to Rule Them All.csproj.CoreCompileInputs.cache
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Debug\One Tower to Rule Them All.dll
+E:\Users\Mrclone2\Source\Repos\BTD6 Mods\One Tower to Rule Them All\obj\Debug\One Tower to Rule Them All.pdb
