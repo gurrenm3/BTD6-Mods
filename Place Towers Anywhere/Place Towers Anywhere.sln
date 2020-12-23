@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Place Towers Anywhere", "Place Towers Anywhere.csproj", "{97A307B3-056C-435B-A7E3-900F96E69D6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A307B3-056C-435B-A7E3-900F96E69D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A307B3-056C-435B-A7E3-900F96E69D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A307B3-056C-435B-A7E3-900F96E69D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A307B3-056C-435B-A7E3-900F96E69D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47CFC163-2A13-4E6C-92C8-EF57CD3C1271}
+	EndGlobalSection
+EndGlobal
