@@ -1,4 +1,6 @@
-﻿using MelonLoader;
+﻿using Assets.Scripts.Unity;
+using Assets.Scripts.Unity.UI_New.InGame;
+using MelonLoader;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,17 +8,29 @@ using System.Reflection;
 
 namespace One_Tower_To_Rule_Them_All
 {
-    class MelonMain : MelonMod
+    public class MelonMain : MelonMod
     {
-        public static bool isInRace = false;
-        internal static string modDir = Environment.CurrentDirectory + "//Mods//" + Assembly.GetExecutingAssembly().GetName().Name;
+        internal static string modDir = $"{Environment.CurrentDirectory}\\Mods\\{Assembly.GetExecutingAssembly().GetName().Name}";
 
         public override void OnApplicationStart()
         {
-            base.OnApplicationStart();
+            MelonLogger.Log("Mod has finished loading");
+
+            string modName = Assembly.GetExecutingAssembly().GetName().Name;
+            MelonLogger.Log($"{modName} will not work in Races, Odyssey, and Public Co-op matches. This is for your own" +
+                $" protection so you're account doesn't get in trouble.");
 
             CreateTowerList();
-            MelonLogger.Log("One Tower to Rule Them All has finished loading");
+        }
+
+        public override void OnUpdate()
+        {
+            if (Game.instance is null)
+                return;
+
+            if (InGame.instance is null)
+                return;
+
         }
 
         public void CreateTowerList()

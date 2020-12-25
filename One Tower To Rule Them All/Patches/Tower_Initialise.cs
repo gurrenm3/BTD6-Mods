@@ -1,29 +1,27 @@
-﻿namespace One_Tower_to_Rule_Them_All.Patches.Tower
-{
-    using System;
-    using Harmony;
-    using MelonLoader;
-    using Assets.Scripts.Models;
-    using One_Tower_To_Rule_Them_All;
-    using Assets.Scripts.Models.Towers;
-    using Assets.Scripts.Simulation.Towers;
-    using Gurren_Core.Api.BTD6;
-    using Assets.Scripts.Unity;
-    using Gurren_Core.Extensions;
+﻿using System;
+using Harmony;
+using MelonLoader;
+using Assets.Scripts.Models;
+using Assets.Scripts.Models.Towers;
+using Assets.Scripts.Simulation.Towers;
+using Gurren_Core.Api.BTD6;
+using Assets.Scripts.Unity;
+using Gurren_Core.Extensions;
 
+namespace One_Tower_To_Rule_Them_All.Patches
+{
     [HarmonyPatch(typeof(Tower), "Initialise")]
-    public class TowerInitialise_Patch
+    public class Tower_Initialise
     {
         private static Settings settings;
         private static Random rand = new Random();
         [HarmonyPrefix]
         internal static bool Prefix(ref Tower __instance, ref Model modelToUse)
         {
-            if (MelonMain.isInRace)
+            if (SessionData.CurrentSession.IsCheating)
                 return true;
 
-            if (settings == null)
-                settings = Settings.settings;
+            settings = Settings.LoadedSettings;
 
             if (settings.TowerName.Trim() == "" || ((settings.upgrade1 > 0 || settings.upgrade2 > 0 || settings.upgrade3 > 0) &&
                 modelToUse.name.ToLower().Contains(settings.TowerName.ToLower())))
@@ -51,9 +49,6 @@
 
         private static int GetUpgrade(int min, int max)
         {
-            if (settings == null)
-                settings = Settings.settings;
-
             int nextUpgrade = 0;
 
             nextUpgrade = rand.Next(min, max + 1);

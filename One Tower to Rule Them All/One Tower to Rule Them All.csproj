@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F54A2E9-7E12-4F67-B49C-2267F2FDECE6}</ProjectGuid>
+    <ProjectGuid>{D74E9A65-A5F9-4A0A-9DB0-FAE869941529}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>One_Tower_to_Rule_Them_All</RootNamespace>
-    <AssemblyName>One Tower to Rule Them All</AssemblyName>
+    <RootNamespace>One_Tower_To_Rule_Them_All</RootNamespace>
+    <AssemblyName>One Tower To Rule Them All</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,23 +32,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Gurren Core">
-      <HintPath>L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods\Gurren Core.dll</HintPath>
+      <HintPath>F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods\Gurren Core.dll</HintPath>
     </Reference>
     <Reference Include="Il2Cppmscorlib">
-      <HintPath>L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+      <HintPath>F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MelonLoader.ModHandler">
-      <HintPath>L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.ModHandler.dll</HintPath>
+      <HintPath>F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.ModHandler.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+      <HintPath>F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -60,24 +60,34 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UnhollowerBaseLib">
-      <HintPath>L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+      <HintPath>F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AntiCheat\CoopHandler.cs" />
+    <Compile Include="AntiCheat\OdysseyHandler.cs" />
+    <Compile Include="Guard.cs" />
     <Compile Include="MelonMain.cs" />
-    <Compile Include="Patches\MainMenuEventPanel\OpenRaceEventScreen.cs" />
-    <Compile Include="Patches\MainMenu\OnEnable.cs" />
-    <Compile Include="Patches\Tower\Initialise.cs" />
+    <Compile Include="Patches\CoopButtonChecker_OnClick.cs" />
+    <Compile Include="Patches\MainMenuEventPanel_OpenRaceEventScreen.cs" />
+    <Compile Include="Patches\MainMenu_OnEnable.cs" />
+    <Compile Include="Patches\OdysseyEventScreen_Update.cs" />
+    <Compile Include="Patches\Tower_Initialise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AntiCheat\RaceHandler.cs" />
+    <Compile Include="Serializer.cs" />
+    <Compile Include="SessionData.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="TowerTypes.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "L:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods" /y</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "F:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods" /y</PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -1,34 +1,42 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
+using static One_Tower_To_Rule_Them_All.Serializer;
 
 namespace One_Tower_To_Rule_Them_All
 {
-    class Settings
+    internal class Settings
     {
-        public static Settings settings;
+        private static Settings settings;
+
+        public static Settings LoadedSettings
+        {
+            get { return (settings != null) ? settings : LoadSettings(); }
+            set { settings = value; }
+        }
+
         public static string settingsPath = MelonMain.modDir + "//settings.json";
 
+
+        // Put the properties you want to save in here
+        #region Properties
         public string TowerName { get; set; } = "SuperMonkey";
         public bool UseRandomUpgradesInstead { get; set; } = true;
         public int upgrade1 { get; set; } = 0;
         public int upgrade2 { get; set; } = 0;
         public int upgrade3 { get; set; } = 0;
+        #endregion
 
 
         public static Settings LoadSettings()
         {
-            if (File.Exists(settingsPath))
-                settings = Gurren_Core.Utils.JsonSerializer.LoadFromFile<Settings>(settingsPath);
-            else
-                CreateNewSettingsFile();
-
+            settings = (File.Exists(settingsPath)) ? LoadFromFile<Settings>(settingsPath) : CreateNewSettingsFile();
             return settings;
         }
 
-        private static void CreateNewSettingsFile()
+        private static Settings CreateNewSettingsFile()
         {
-            settings = new Settings();
-            Gurren_Core.Utils.JsonSerializer.SaveToFile<Settings>(settings, settingsPath);
+            var settings = new Settings();
+            SaveToFile<Settings>(settings, settingsPath);
+            return settings;
         }
     }
 }
