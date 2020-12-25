@@ -72,6 +72,8 @@
     <Compile Include="Patches\CoopButtonChecker_OnClick.cs" />
     <Compile Include="Patches\MainMenuEventPanel_OpenRaceEventScreen.cs" />
     <Compile Include="Patches\MainMenu_OnEnable.cs" />
+    <Compile Include="Patches\Map_CanPlace.cs" />
+    <Compile Include="Patches\Map_IsTowerPlaceableInAreaType.cs" />
     <Compile Include="Patches\OdysseyEventScreen_Update.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AntiCheat\RaceHandler.cs" />

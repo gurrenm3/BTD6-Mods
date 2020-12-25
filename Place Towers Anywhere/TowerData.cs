@@ -24,7 +24,7 @@ namespace Place_Towers_Anywhere
             var towerData = SessionData.CurrentSession.AllTowerData.First(data => data.TowerModel == towerModel);
             if (towerData is null)
                 return;
-
+            
             towerModel.radius = towerData.Radius;
             towerModel.radiusSquared = towerData.RadiusSquared;
             towerModel.areaTypes = towerData.AreaTypes;
