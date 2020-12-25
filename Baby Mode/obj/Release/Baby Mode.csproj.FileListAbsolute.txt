@@ -1,8 +1,0 @@
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\bin\Release\Baby Mode.dll
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\bin\Release\Baby Mode.pdb
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\bin\Release\UnhollowerBaseLib.dll
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Release\Baby Mode.csproj.CoreCompileInputs.cache
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Release\Baby Mode.csproj.CopyComplete
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Release\Baby Mode.dll
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Release\Baby Mode.pdb
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Baby Mode\obj\Release\Baby Mode.csprojAssemblyReference.cache

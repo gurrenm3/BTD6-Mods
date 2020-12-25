@@ -6,18 +6,15 @@ using Harmony;
 namespace Baby_Mode.Patches
 {
     [HarmonyPatch(typeof(Bloon), "Initialise")]
-    public class BloonInitialise_Patch
+    public class Bloon_Initialise
     {
-        private static Settings settings;
         [HarmonyPostfix]
         public static void Postfix(Bloon __instance, ref Model modelToUse)
         {
-            if (MelonMain.isInRace)
+            if (SessionData.CurrentSession.IsCheating)
                 return;
 
-            if (settings == null)
-                settings = Settings.settings;
-
+            var settings = Settings.LoadedSettings;
             __instance.bloonModel = _BloonModel.SetBloonStatus(modelToUse.name, settings.AllowCamo, settings.AllowFortified, settings.AllowRegrow);
         }
     }

@@ -1,33 +1,41 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
+using static Baby_Mode.Serializer;
 
 namespace Baby_Mode
 {
-    public class Settings
+    internal class Settings
     {
-        public static Settings settings;
+        private static Settings settings;
+
+        public static Settings LoadedSettings
+        {
+            get { return (settings != null) ? settings : Load(); }
+            set { settings = value; }
+        }
+
         public static string settingsPath = MelonMain.modDir + "//settings.json";
 
+
+        // Put the properties you want to save in here
+        #region Properties
         public bool ApplyToHeros { get; set; } = true;
         public bool AllowCamo { get; set; } = false;
         public bool AllowRegrow { get; set; } = false;
         public bool AllowFortified { get; set; } = false;
+        #endregion
 
-        
-        public static Settings LoadSettings()
+
+        public static Settings Load()
         {
-            if (File.Exists(settingsPath))
-                settings = Gurren_Core.Utils.JsonSerializer.LoadFromFile<Settings>(settingsPath);
-            else
-                CreateNewSettingsFile();
-
+            settings = (File.Exists(settingsPath)) ? LoadFromFile<Settings>(settingsPath) : CreateNewSettingsFile();
             return settings;
         }
 
-        private static void CreateNewSettingsFile()
+        private static Settings CreateNewSettingsFile()
         {
-            settings = new Settings();
-            Gurren_Core.Utils.JsonSerializer.SaveToFile<Settings>(settings, settingsPath);
+            var settings = new Settings();
+            SaveToFile<Settings>(settings, settingsPath);
+            return settings;
         }
     }
 }

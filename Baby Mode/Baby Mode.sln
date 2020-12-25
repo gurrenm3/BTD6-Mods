@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30104.148
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baby Mode", "Baby Mode.csproj", "{DA84A236-6013-4EDD-8861-3DED38B98E06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baby Mode", "Baby Mode.csproj", "{EBC8607E-B6BA-4ED6-8848-C78964190641}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA84A236-6013-4EDD-8861-3DED38B98E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA84A236-6013-4EDD-8861-3DED38B98E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA84A236-6013-4EDD-8861-3DED38B98E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA84A236-6013-4EDD-8861-3DED38B98E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC8607E-B6BA-4ED6-8848-C78964190641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC8607E-B6BA-4ED6-8848-C78964190641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC8607E-B6BA-4ED6-8848-C78964190641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC8607E-B6BA-4ED6-8848-C78964190641}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A7D760E4-820B-4E4D-AD3C-ACB53005E418}
+		SolutionGuid = {BA2D66B6-E6D0-4D21-949D-0AF1FCAB24F5}
 	EndGlobalSection
 EndGlobal

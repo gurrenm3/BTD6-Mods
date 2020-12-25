@@ -5,16 +5,16 @@ using Harmony;
 namespace Baby_Mode.Patches
 {
     [HarmonyPatch(typeof(TowerSelectionMenu), "UpdateHeroBooster")]
-    public class HeroUpgradeDetails_Patch
+    public class TowerSelectionMenu_UpdateHeroBooster
     {
         [HarmonyPostfix]
         public static void Postfix(TowerToSimulation tower)
         {
-            if (MelonMain.isInRace)
+            if (SessionData.CurrentSession.IsCheating)
                 return;
 
 
-            if (!Settings.settings.ApplyToHeros)
+            if (!Settings.LoadedSettings.ApplyToHeros)
                 return;
 
             if (tower.hero != null)
