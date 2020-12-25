@@ -1,6 +1,0 @@
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Harder Bloons\bin\Release\Harder Bloons.dll
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Harder Bloons\bin\Release\Harder Bloons.pdb
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Harder Bloons\obj\Release\Harder Bloons.csproj.CoreCompileInputs.cache
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Harder Bloons\obj\Release\Harder Bloons.dll
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Harder Bloons\obj\Release\Harder Bloons.pdb
-E:\Users\Mrclone2\Source\Repos\BTD6 Mods\Harder Bloons\obj\Release\Harder Bloons.csprojAssemblyReference.cache

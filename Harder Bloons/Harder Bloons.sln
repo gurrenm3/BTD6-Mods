@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30104.148
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harder Bloons", "Harder Bloons.csproj", "{1336559A-B690-4171-A6DF-F541D702F3BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harder Bloons", "Harder Bloons.csproj", "{31059D31-595C-439C-9269-CFDEC042BEE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1336559A-B690-4171-A6DF-F541D702F3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1336559A-B690-4171-A6DF-F541D702F3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1336559A-B690-4171-A6DF-F541D702F3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1336559A-B690-4171-A6DF-F541D702F3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31059D31-595C-439C-9269-CFDEC042BEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31059D31-595C-439C-9269-CFDEC042BEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31059D31-595C-439C-9269-CFDEC042BEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31059D31-595C-439C-9269-CFDEC042BEE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0D66BF42-6072-4B48-BA06-1658BCDC780C}
+		SolutionGuid = {6337879D-0F5E-455C-B6AD-6CEABFBF2A26}
 	EndGlobalSection
 EndGlobal

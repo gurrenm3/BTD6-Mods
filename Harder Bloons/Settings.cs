@@ -1,12 +1,23 @@
-﻿namespace Harder_Bloons
-{
-    using System.IO;
+﻿using System.IO;
+using static Harder_Bloons.Serializer;
 
-    public class Settings
+namespace Harder_Bloons
+{
+    internal class Settings
     {
-        public static Settings settings;
+        private static Settings settings;
+
+        public static Settings LoadedSettings
+        {
+            get { return (settings != null) ? settings : LoadSettings(); }
+            set { settings = value; }
+        }
+
         public static string settingsPath = MelonMain.modDir + "//settings.json";
 
+
+        // Put the properties you want to save in here
+        #region Properties
         public bool UseRandomlyStrongerBloons { get; set; } = true;
         public int ChanceForRandomStrongerBloons { get; set; } = 8;
         public int maxRandomChange { get; set; } = 4;
@@ -17,22 +28,20 @@
         public bool ForceAllBloonsCamo { get; set; } = false;
         public bool ForceAllBloonsRegrow { get; set; } = false;
         public bool ForceAllBloonsFortified { get; set; } = false;
+        #endregion
 
 
         public static Settings LoadSettings()
         {
-            if (File.Exists(settingsPath))
-                settings = Gurren_Core.Utils.JsonSerializer.LoadFromFile<Settings>(settingsPath);
-            else
-                CreateNewSettingsFile();
-
+            settings = (File.Exists(settingsPath)) ? LoadFromFile<Settings>(settingsPath) : CreateNewSettingsFile();
             return settings;
         }
 
-        private static void CreateNewSettingsFile()
+        private static Settings CreateNewSettingsFile()
         {
-            settings = new Settings();
-            Gurren_Core.Utils.JsonSerializer.SaveToFile<Settings>(settings, settingsPath);
+            var settings = new Settings();
+            SaveToFile<Settings>(settings, settingsPath);
+            return settings;
         }
     }
 }
