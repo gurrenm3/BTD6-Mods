@@ -3,7 +3,8 @@ using Assets.Scripts.Unity.UI_New.InGame;
 using Gurren_Core.Logging;
 using Harmony;
 
-namespace Losing_Health_Costs_Monkey_Money.Patches
+
+namespace Buying_Towers_Costs_Monkey_Money.Patches
 {
     [HarmonyPatch(typeof(Simulation), "OnRoundStart")]
     public class Simulation_OnRoundStart
@@ -17,10 +18,8 @@ namespace Losing_Health_Costs_Monkey_Money.Patches
             if (isCheating || shownWarning || isSandbox)
                 return;
 
-            string text = "Notice! You are playing a gamemode that causes you to lose Monkey Money when you lose health." +
-                " Proceed with caution...";
-
-            Logger.ShowMessage(text, "Losing Health Costs MM", displayTime: 9);
+            string text = "Notice! You're using a mod that makes towers cost Monkey Money. Proceed with caution...";
+            Logger.ShowMessage(text, "Towers Cost MM", displayTime: 9);
             SessionData.CurrentSession.shownWarningMessage = true;
         }
     }
