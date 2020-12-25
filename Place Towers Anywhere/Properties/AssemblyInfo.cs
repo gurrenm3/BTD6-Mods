@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Place Towers Anywhere")]
+[assembly: AssemblyTitle("Place_Towers_Anywhere")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: MelonInfo(typeof(Place_Towers_Anywhere.MelonMain), "Place Towers Anywhere", "1.0.0", "Gurrenm4")]
+[assembly: MelonInfo(typeof(Place_Towers_Anywhere.MelonMain), "Place_Towers_Anywhere", "1.0.0", "Gurrenm4")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("97a307b3-056c-435b-a7e3-900f96e69d6e")]
+[assembly: Guid("6348c027-8b45-47eb-96f5-56029fea8bdf")]
 
 // Version information for an assembly consists of the following four values:
 //

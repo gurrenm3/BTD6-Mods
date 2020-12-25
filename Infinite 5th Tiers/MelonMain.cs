@@ -4,7 +4,7 @@ using MelonLoader;
 using System;
 using System.Reflection;
 
-namespace Infinite_5th_Tier
+namespace Infinite_5th_Tiers
 {
     public class MelonMain : MelonMod
     {
@@ -13,6 +13,10 @@ namespace Infinite_5th_Tier
         public override void OnApplicationStart()
         {
             MelonLogger.Log("Mod has finished loading");
+
+            string modName = Assembly.GetExecutingAssembly().GetName().Name;
+            MelonLogger.Log($"{modName} will not work in Races, Odyssey, and Public Co-op matches. This is for your own" +
+                $" protection so you're account doesn't get in trouble.");
         }
 
         public override void OnUpdate()

@@ -3,51 +3,67 @@ using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.UI_New.Main;
 using Harmony;
+using System.Linq;
+using UnhollowerBaseLib;
 
 namespace Place_Towers_Anywhere.Patches
 {
     [HarmonyPatch(typeof(MainMenu), nameof(MainMenu.OnEnable))]
     internal class MainMenu_OnEnable
     {
-        private static MainMenu_OnEnable patch = new MainMenu_OnEnable();
+        static bool finishedSetup = false;
 
         [HarmonyPostfix]
-        public static void HarmonyPatch()
+        internal static void Postfix()
         {
-            patch.ExecutePatch();
+            if (!finishedSetup)
+                Setup();
+
+            if (SessionData.CurrentSession.IsCheating)
+            {
+                SessionData.CurrentSession.ResetCheatStatus();
+            }
+
+            foreach (var towerData in SessionData.CurrentSession.AllTowerData)
+            {
+                towerData.ModTowerModel(towerData.TowerModel);
+            }
         }
 
-        public void ExecutePatch()
-        {
-            ModAllTowers();
-        }
-
-        private void ModAllTowers()
+        private static void Setup()
         {
             var allTowerModels = Game.instance.model.towers;
             for (int i = 0; i < allTowerModels.Count; i++)
             {
                 var towerModel = allTowerModels[i];
-                SetTowerModelRadius(towerModel);
-                SetTowerModelAreaTypes(towerModel);
+                AddToDataList(towerModel);
             }
+
+            finishedSetup = true;
         }
 
-        private void SetTowerModelRadius(TowerModel towerModel)
+        private static void AddToDataList(TowerModel towerModel)
         {
-            towerModel.radius = 0;
-            towerModel.radiusSquared = 0;
-        }
+            var result = SessionData.CurrentSession.AllTowerData.FirstOrDefault(data => data.TowerModel == towerModel);
+            if (result != null)
+                return;
 
-        private void SetTowerModelAreaTypes(TowerModel towerModel)
-        {
-            towerModel.areaTypes = new UnhollowerBaseLib.Il2CppStructArray<AreaType>(4);
+            var towerData = new TowerData()
+            {
+                TowerModel = towerModel,
+                Radius = towerModel.radius,
+                RadiusSquared = towerModel.radiusSquared
+            };
 
-            var areaTypes = towerModel.areaTypes;
-            areaTypes[0] = AreaType.ice;
-            areaTypes[1] = AreaType.land;
-            areaTypes[2] = AreaType.water;
-            areaTypes[2] = AreaType.track;
+            var areaCount = towerModel.areaTypes.Count;
+            towerData.AreaTypes = new Il2CppStructArray<AreaType>(areaCount);
+            for (int i = 0; i < towerModel.areaTypes.Count; i++)
+            {
+                var areaType = towerModel.areaTypes[i];
+                towerData.AreaTypes[i] = areaType;
+            }
+
+            SessionData.CurrentSession.AllTowerData.Add(towerData);
         }
     }
 }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{97A307B3-056C-435B-A7E3-900F96E69D6E}</ProjectGuid>
+    <ProjectGuid>{6348C027-8B45-47EB-96F5-56029FEA8BDF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Place_Towers_Anywhere</RootNamespace>
@@ -66,9 +66,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AntiCheat\CoopHandler.cs" />
+    <Compile Include="AntiCheat\OdysseyHandler.cs" />
     <Compile Include="MelonMain.cs" />
+    <Compile Include="Patches\CoopButtonChecker_OnClick.cs" />
+    <Compile Include="Patches\MainMenuEventPanel_OpenRaceEventScreen.cs" />
     <Compile Include="Patches\MainMenu_OnEnable.cs" />
+    <Compile Include="Patches\OdysseyEventScreen_Update.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AntiCheat\RaceHandler.cs" />
+    <Compile Include="SessionData.cs" />
+    <Compile Include="TowerData.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

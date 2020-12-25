@@ -1,6 +1,6 @@
-D:\Repos\BTD6 Mods\Place Towers Anywhere\bin\Debug\Place Towers Anywhere.dll
-D:\Repos\BTD6 Mods\Place Towers Anywhere\bin\Debug\Place Towers Anywhere.pdb
-D:\Repos\BTD6 Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.csprojAssemblyReference.cache
-D:\Repos\BTD6 Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.csproj.CoreCompileInputs.cache
-D:\Repos\BTD6 Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.dll
-D:\Repos\BTD6 Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.pdb
+D:\GitHub\BTD6-Mods\Place Towers Anywhere\bin\Debug\Place Towers Anywhere.dll
+D:\GitHub\BTD6-Mods\Place Towers Anywhere\bin\Debug\Place Towers Anywhere.pdb
+D:\GitHub\BTD6-Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.csprojAssemblyReference.cache
+D:\GitHub\BTD6-Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.csproj.CoreCompileInputs.cache
+D:\GitHub\BTD6-Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.dll
+D:\GitHub\BTD6-Mods\Place Towers Anywhere\obj\Debug\Place Towers Anywhere.pdb
