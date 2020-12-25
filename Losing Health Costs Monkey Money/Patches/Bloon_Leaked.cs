@@ -42,12 +42,15 @@ namespace Losing_Health_Costs_Monkey_Money.Patches
         private double GetMonkeyMoneyLoss(float damage, double currentMm)
         {
             var settings = Settings.LoadedSettings;
-            if (settings.lossMultiplier < 1)
-                settings.lossMultiplier = 1;
 
+            const double minLossMultiplier = 1;
+            if (settings.lossMultiplier < minLossMultiplier)
+                settings.lossMultiplier = minLossMultiplier;
+
+            const double noMoney = 0;
             var newMm = currentMm - (damage * settings.lossMultiplier);
-            if (newMm < 0)
-                newMm = 0;
+            if (newMm < noMoney)
+                newMm = noMoney;
 
             return newMm;
         }
@@ -64,7 +67,8 @@ namespace Losing_Health_Costs_Monkey_Money.Patches
 
         private void CheckForGameOver()
         {
-            if (Game.instance.GetMonkeyMoney() <= 0)
+            const double noMoney = 0;
+            if (Game.instance.GetMonkeyMoney() <= noMoney)
                 InGame.Bridge.Lose();
         }
     }

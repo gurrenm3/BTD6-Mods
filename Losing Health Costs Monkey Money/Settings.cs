@@ -18,7 +18,7 @@ namespace Losing_Health_Costs_Monkey_Money
 
         // Put the properties you want to save in here
         #region Properties
-        public int lossMultiplier { get; set; } = 2;
+        public double lossMultiplier { get; set; } = 2;
         #endregion
 
 
