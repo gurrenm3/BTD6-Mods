@@ -10,6 +10,12 @@ namespace Random_Towers.Patches
         internal static void Postfix()
         {
             var loadSettings = Settings.LoadedSettings;
+            if (loadSettings.AllowedTowers.Count == 0)
+            {
+                loadSettings.AllowedTowers = TowerTypes.defaultAllowTypes;
+                Settings.LoadedSettings.Save();
+            }
+
             if (SessionData.CurrentSession.IsCheating)
             {
                 SessionData.CurrentSession.ResetCheatStatus();

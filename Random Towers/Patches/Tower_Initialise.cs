@@ -1,7 +1,9 @@
-﻿using Assets.Scripts.Models.Towers;
+﻿using Assets.Scripts.Models;
+using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Simulation.Towers;
 using Assets.Scripts.Unity;
 using Harmony;
+using MelonLoader;
 using System;
 
 namespace Random_Towers.Patches
@@ -11,15 +13,15 @@ namespace Random_Towers.Patches
     {
         internal static Random rand = new Random();
 
-        [HarmonyPostfix]
-        internal static void Postfix(ref Tower __instance)
+        [HarmonyPrefix]
+        internal static bool Prefix(ref Tower __instance, ref Model modelToUse)
         {
             if (SessionData.CurrentSession.IsCheating)
-                return;
+                return true;
 
             var settings = Settings.LoadedSettings;
-            if (!settings.AllowedTowers.Contains(__instance.towerModel.name))
-                return;
+            /*if (!settings.AllowedTowers.Contains(__instance.towerModel.name))
+                return;*/
 
             TowerModel newTower = null;
             for (int i = 0; i < 10; i++)
@@ -30,10 +32,12 @@ namespace Random_Towers.Patches
             }
 
             if (newTower != null)
-                __instance.towerModel = newTower;
+                modelToUse = newTower;
+
+            return true;
         }
 
-        internal static int GetUpgrade(int min, int max) => rand.Next(min, max);
+        internal static int GetUpgrade(int min, int max) => rand.Next(min, max + 1);
 
         internal static TowerModel GetNewTower()
         {

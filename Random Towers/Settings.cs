@@ -20,7 +20,7 @@ namespace Random_Towers
         // Put the properties you want to save in here
         #region Properties
         public int MaxRandomUpgrade { get; set; } = 5;
-        public List<string> AllowedTowers { get; set; } = TowerTypes.defaultAllowTypes;
+        public List<string> AllowedTowers { get; set; } = new List<string>();
         public bool AllowRandomUpgrades { get; set; } = false;
         #endregion
 
@@ -34,8 +34,13 @@ namespace Random_Towers
         private static Settings CreateNewSettingsFile()
         {
             var settings = new Settings();
-            SaveToFile<Settings>(settings, settingsPath);
+            settings.Save();
             return settings;
+        }
+
+        public void Save()
+        {
+            SaveToFile<Settings>(settings, settingsPath);
         }
     }
 }
