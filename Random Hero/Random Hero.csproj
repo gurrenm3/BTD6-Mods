@@ -69,13 +69,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Guard.cs" />
+    <Compile Include="Extensions\InGameExt.cs" />
+    <Compile Include="Extensions\TowerModelExt.cs" />
     <Compile Include="MelonMain.cs" />
     <Compile Include="Patches\InGame_StartMatch.cs" />
     <Compile Include="Patches\MainMenu_OnEnable.cs" />
+    <Compile Include="Patches\TowerInventory_Init.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Serializer.cs" />
-    <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
