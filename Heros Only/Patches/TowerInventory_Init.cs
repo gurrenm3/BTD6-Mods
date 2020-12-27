@@ -34,9 +34,7 @@ namespace Heros_Only.Patches
                     continue;
                 }
 
-
-                string towerName = tower.name.Replace("HeroDetailsModel_", "");
-                bool hasHero = unlockedHeros.Contains(towerName);
+                bool hasHero = unlockedHeros.Contains(tower.towerId);
                 if (!hasHero)
                     continue;
 

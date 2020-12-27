@@ -9,6 +9,7 @@ namespace Heros_Only.Patches
         [HarmonyPostfix]
         internal static void Postfix()
         {
+            var loadSettings = Settings.LoadedSettings;
             if (SessionData.CurrentSession.IsCheating)
             {
                 SessionData.CurrentSession.ResetCheatStatus();

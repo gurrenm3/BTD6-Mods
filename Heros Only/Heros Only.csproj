@@ -72,6 +72,7 @@
     <Compile Include="AntiCheat\CoopHandler.cs" />
     <Compile Include="AntiCheat\OdysseyHandler.cs" />
     <Compile Include="Extensions\TowerDetailsModelExt.cs" />
+    <Compile Include="Guard.cs" />
     <Compile Include="MelonMain.cs" />
     <Compile Include="Patches\CoopButtonChecker_OnClick.cs" />
     <Compile Include="Patches\InGame_StartFreePlay.cs" />
@@ -82,7 +83,9 @@
     <Compile Include="Patches\TowerInventory_Init.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AntiCheat\RaceHandler.cs" />
+    <Compile Include="Serializer.cs" />
     <Compile Include="SessionData.cs" />
+    <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
