@@ -31,7 +31,7 @@ namespace Unlimited_Heros.Patches
                 if (!hasHero)
                     continue;
 
-                allTowersInTheGame[i] = new ShopTowerDetailsModel(tower.towerId, tower.towerIndex, 0, 0, 0, -1, tower.popsRequired, tower.mods);
+                allTowersInTheGame[i].towerCount = -1;
             }
 
             return true;
