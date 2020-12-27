@@ -1,7 +1,5 @@
 ﻿using Assets.Scripts.Unity.UI_New.Main;
 using Harmony;
-using Gurren_Core.Extensions;
-using Assets.Scripts.Unity;
 
 namespace Unlimited_Heros.Patches
 {

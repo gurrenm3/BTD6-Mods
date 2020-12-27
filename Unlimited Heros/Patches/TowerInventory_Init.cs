@@ -4,17 +4,24 @@ using Harmony;
 using Il2CppSystem.Collections.Generic;
 using Assets.Scripts.Unity;
 using Gurren_Core.Extensions;
+using MelonLoader;
 
 namespace Unlimited_Heros.Patches
 {
     [HarmonyPatch(typeof(TowerInventory), nameof(TowerInventory.Init))]
     internal class TowerInventory_Init
     {
-        [HarmonyPrefix]
-        internal static bool Prefix(TowerInventory __instance, ref List<TowerDetailsModel> allTowersInTheGame)
+        public static List<TowerDetailsModel> allTowers = new List<TowerDetailsModel>();
+        public static TowerInventory towerInventory;
+
+        [HarmonyPostfix]
+        internal static void Postfix(TowerInventory __instance, ref List<TowerDetailsModel> allTowersInTheGame)
         {
+            towerInventory = __instance;
+            allTowers = allTowersInTheGame;
+
             if (SessionData.CurrentSession.IsCheating)
-                return true;
+                return;
 
             var unlockedHeros = Game.instance.GetProfileModel().unlockedHeroes;
             for (int i = 0; i < allTowersInTheGame.Count; i++)
@@ -26,15 +33,15 @@ namespace Unlimited_Heros.Patches
                     continue;
 
 
-                string towerName = tower.name.Replace("HeroDetailsModel_", "");
-                bool hasHero = unlockedHeros.Contains(towerName);
+                bool hasHero = unlockedHeros.Contains(tower.towerId);
                 if (!hasHero)
                     continue;
+
 
                 allTowersInTheGame[i].towerCount = -1;
             }
 
-            return true;
+            return;
         }
     }
 }

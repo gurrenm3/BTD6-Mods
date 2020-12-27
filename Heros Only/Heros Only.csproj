@@ -71,8 +71,11 @@
   <ItemGroup>
     <Compile Include="AntiCheat\CoopHandler.cs" />
     <Compile Include="AntiCheat\OdysseyHandler.cs" />
+    <Compile Include="Extensions\TowerDetailsModelExt.cs" />
     <Compile Include="MelonMain.cs" />
     <Compile Include="Patches\CoopButtonChecker_OnClick.cs" />
+    <Compile Include="Patches\InGame_StartFreePlay.cs" />
+    <Compile Include="Patches\InGame_StartMatch.cs" />
     <Compile Include="Patches\MainMenuEventPanel_OpenRaceEventScreen.cs" />
     <Compile Include="Patches\MainMenu_OnEnable.cs" />
     <Compile Include="Patches\OdysseyEventScreen_Update.cs" />

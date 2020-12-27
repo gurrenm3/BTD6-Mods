@@ -10,9 +10,15 @@ namespace Heros_Only.Patches
     [HarmonyPatch(typeof(TowerInventory), nameof(TowerInventory.Init))]
     internal class TowerInventory_Init
     {
+        public static List<TowerDetailsModel> allTowers = new List<TowerDetailsModel>();
+        public static TowerInventory towerInventory;
+
         [HarmonyPrefix]
         internal static bool Prefix(TowerInventory __instance, ref List<TowerDetailsModel> allTowersInTheGame)
         {
+            towerInventory = __instance;
+            allTowers = allTowersInTheGame;
+
             if (SessionData.CurrentSession.IsCheating)
                 return true;
 
