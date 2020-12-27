@@ -1,9 +1,7 @@
 ﻿using Assets.Scripts.Unity.UI_New.Main;
 using Harmony;
-using Gurren_Core.Extensions;
-using Assets.Scripts.Unity;
 
-namespace Unlimited_Heros.Patches
+namespace Heros_Only.Patches
 {
     [HarmonyPatch(typeof(MainMenu), nameof(MainMenu.OnEnable))]
     internal class MainMenu_OnEnable
@@ -14,7 +12,7 @@ namespace Unlimited_Heros.Patches
             if (SessionData.CurrentSession.IsCheating)
             {
                 SessionData.CurrentSession.ResetCheatStatus();
-            }            
+            }
         }
     }
 }
