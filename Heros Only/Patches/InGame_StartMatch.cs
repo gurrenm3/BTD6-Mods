@@ -3,6 +3,7 @@ using Heros_Only.Extensions;
 using Assets.Scripts.Unity.UI_New.InGame;
 using Assets.Scripts.Unity;
 using System.Linq;
+using MelonLoader;
 
 namespace Heros_Only.Patches
 {
@@ -14,6 +15,7 @@ namespace Heros_Only.Patches
         {
             var towerInventory = TowerInventory_Init.towerInventory;
             var allTowers = TowerInventory_Init.allTowers;
+
             foreach (var tower in allTowers)
             {
                 var test = Settings.LoadedSettings.allowedTowers.FirstOrDefault(t => tower.towerId == t);
