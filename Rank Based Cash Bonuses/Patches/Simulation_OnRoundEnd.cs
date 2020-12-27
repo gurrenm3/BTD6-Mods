@@ -16,7 +16,7 @@ namespace Rank_Based_Cash_Bonuses.Patches
             int roundNumber = round + roundOffset;
 
             const int bonusRound = 10;
-            int multiplier = (roundNumber % bonusRound == 0) ? 300 : 1;
+            int multiplier = (roundNumber % bonusRound == 0) ? 3 : 1;
 
             var playerRank = Game.instance.GetProfileModel().rank.Value;
             var cashToAdd = playerRank * multiplier;

@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace Rank_Based_Cash_Bonuses
+namespace Random_Hero
 {
     internal class Serializer
     {

@@ -1,7 +1,7 @@
 ﻿using System.IO;
-using static Rank_Based_Cash_Bonuses.Serializer;
+using static Rank_Based_Health_Bonus.Serializer;
 
-namespace Rank_Based_Cash_Bonuses
+namespace Rank_Based_Health_Bonus
 {
     internal class Settings
     {
