@@ -5,7 +5,7 @@ using Gurren_Core.Extensions;
 using Random_Hero.Extensions;
 using System;
 using System.Collections.Generic;
-
+using System.Linq;
 namespace Random_Hero.Patches
 {
     [HarmonyPatch(typeof(InGame), nameof(InGame.StartMatch))]
@@ -28,7 +28,7 @@ namespace Random_Hero.Patches
 
             for (int i = 0; i < unlockedHeros.Count; i++)
             {
-                var towerModel = Game.instance.GetTowerModel(unlockedHeros[i]);
+                var towerModel = Game.instance.model.towers.FirstOrDefault(a => a.name == unlockedHeros[i]);
                 if (towerModel is null)
                     continue;
 
