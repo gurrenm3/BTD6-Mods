@@ -22,7 +22,7 @@ namespace Towers_Randomly_Sold
 
         private void SetNextSellTime()
         {
-            timeToNextSell = rand.Next(Settings.LoadedSettings.MinSellTime, Settings.LoadedSettings.MaxSellTime);
+            timeToNextSell = Time.time + rand.Next(Settings.LoadedSettings.MinSellTime, Settings.LoadedSettings.MaxSellTime);
         }
 
         public void SellRandomTower()
