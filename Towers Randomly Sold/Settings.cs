@@ -19,8 +19,8 @@ namespace Towers_Randomly_Sold
         // Put the properties you want to save in here
         #region Properties
         public bool WorkInSandbox { get; set; } = false;
-        public int MinSellTime { get; set; } = 30;
-        public int MaxSellTime { get; set; } = 90;
+        public int MinSellTime { get; set; } = 300;
+        public int MaxSellTime { get; set; } = 900;
         #endregion
 
 
