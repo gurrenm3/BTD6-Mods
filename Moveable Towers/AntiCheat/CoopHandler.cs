@@ -1,5 +1,5 @@
 ﻿
-namespace Movable_Towers.AntiCheat
+namespace Moveable_Towers.AntiCheat
 {
     internal class CoopHandler
     {

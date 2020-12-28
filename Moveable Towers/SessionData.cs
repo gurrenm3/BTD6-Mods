@@ -1,6 +1,6 @@
-﻿using Movable_Towers.AntiCheat;
+﻿using Moveable_Towers.AntiCheat;
 
-namespace Movable_Towers
+namespace Moveable_Towers
 {
     internal class SessionData
     {

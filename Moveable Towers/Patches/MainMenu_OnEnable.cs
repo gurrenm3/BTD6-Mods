@@ -1,7 +1,7 @@
 ﻿using Assets.Scripts.Unity.UI_New.Main;
 using Harmony;
 
-namespace Movable_Towers.Patches
+namespace Moveable_Towers.Patches
 {
     [HarmonyPatch(typeof(MainMenu), nameof(MainMenu.OnEnable))]
     internal class MainMenu_OnEnable

@@ -3,9 +3,9 @@ using Assets.Scripts.Simulation.Track;
 using Assets.Scripts.Unity.UI_New.InGame;
 using Harmony;
 using MelonLoader;
-using static Movable_Towers.SessionData;
+using static Moveable_Towers.SessionData;
 
-namespace Movable_Towers.Patches
+namespace Moveable_Towers.Patches
 {
 
     [HarmonyPatch(typeof(InputManager), nameof(InputManager.Update))]

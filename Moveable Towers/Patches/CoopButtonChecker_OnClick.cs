@@ -1,7 +1,7 @@
 ﻿using Assets.Scripts.Unity.UI_New.Coop;
 using Harmony;
 
-namespace Movable_Towers.Patches
+namespace Moveable_Towers.Patches
 {
     [HarmonyPatch(typeof(CoopQuickMatchScreen), nameof(CoopQuickMatchScreen.Open))]
     internal class CoopButtonChecker_OnClick

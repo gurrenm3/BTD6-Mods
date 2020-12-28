@@ -5,15 +5,15 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Movable_Towers")]
+[assembly: AssemblyTitle("Moveable_Towers")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Movable_Towers")]
+[assembly: AssemblyProduct("Moveable_Towers")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: MelonInfo(typeof(Movable_Towers.MelonMain), "Movable_Towers", "1.0.0", "Gurrenm4")]
+[assembly: MelonInfo(typeof(Moveable_Towers.MelonMain), "Moveable_Towers", "1.0.0", "Gurrenm4")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 // Setting ComVisible to false makes the types in this assembly not visible

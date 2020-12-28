@@ -1,7 +1,7 @@
 ﻿using Assets.Scripts.Unity.UI_New.Odyssey;
 using Harmony;
 
-namespace Movable_Towers.Patches
+namespace Moveable_Towers.Patches
 {
     [HarmonyPatch(typeof(OdysseyEventScreen), nameof(OdysseyEventScreen.Update))]
     internal class OdysseyEventScreen_Update

@@ -5,7 +5,7 @@ using System;
 using System.Reflection;
 using UnityEngine;
 
-namespace Movable_Towers
+namespace Moveable_Towers
 {
     public class MelonMain : MelonMod
     {
@@ -41,12 +41,6 @@ namespace Movable_Towers
                 if (released)
                     SessionData.CurrentSession.MoveKeyHeld = false;
             }
-            /*else
-            {
-                var released = Input.GetKeyUp(moveKey);
-                if (released)
-                    SessionData.CurrentSession.MoveKeyHeld = false;
-            }*/
         }
     }
 }
