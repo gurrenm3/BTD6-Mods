@@ -11,6 +11,7 @@ namespace One_Tower_To_Rule_Them_All
             "BombShooter",
             "BoomerangMonkey",
             "CaveMonkey",
+            "DartlingGunner",
             "DartMonkey",
             "Druid",
             "EngineerMonkey",
