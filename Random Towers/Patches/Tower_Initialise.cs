@@ -51,7 +51,7 @@ namespace Random_Towers.Patches
             int tier2 = 0;
             int tier3 = 0;
 
-            int firstUpgradePath = rand.Next(1, 3);
+            int firstUpgradePath = rand.Next(1, 4);
             switch (firstUpgradePath)
             {
                 case 1:
@@ -65,9 +65,9 @@ namespace Random_Towers.Patches
                     break;
             }
 
-            int nextUpgradePath = rand.Next(1, 3);
+            int nextUpgradePath = rand.Next(1, 4);
             while (nextUpgradePath == firstUpgradePath)
-                nextUpgradePath = rand.Next(1, 3);
+                nextUpgradePath = rand.Next(1, 4);
 
 
             switch (nextUpgradePath)
