@@ -1,8 +1,0 @@
-D:\GitHub\BTD6-Mods\Harder Bloons\bin\Debug\Harder Bloons.dll
-D:\GitHub\BTD6-Mods\Harder Bloons\bin\Debug\Harder Bloons.pdb
-D:\GitHub\BTD6-Mods\Harder Bloons\bin\Debug\Gurren Core.dll
-D:\GitHub\BTD6-Mods\Harder Bloons\obj\Debug\Harder Bloons.csprojAssemblyReference.cache
-D:\GitHub\BTD6-Mods\Harder Bloons\obj\Debug\Harder Bloons.csproj.CoreCompileInputs.cache
-D:\GitHub\BTD6-Mods\Harder Bloons\obj\Debug\Harder Bloons.csproj.CopyComplete
-D:\GitHub\BTD6-Mods\Harder Bloons\obj\Debug\Harder Bloons.dll
-D:\GitHub\BTD6-Mods\Harder Bloons\obj\Debug\Harder Bloons.pdb

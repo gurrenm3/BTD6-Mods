@@ -1,8 +1,0 @@
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\bin\Debug\One Tower To Rule Them All.dll
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\bin\Debug\One Tower To Rule Them All.pdb
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\bin\Debug\Gurren Core.dll
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Debug\One Tower To Rule Them All.csprojAssemblyReference.cache
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Debug\One Tower To Rule Them All.csproj.CoreCompileInputs.cache
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Debug\One Tower To Rule Them All.csproj.CopyComplete
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Debug\One Tower To Rule Them All.dll
-D:\GitHub\BTD6-Mods\One Tower to Rule Them All\obj\Debug\One Tower To Rule Them All.pdb
