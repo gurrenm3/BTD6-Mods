@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random Teleporting Towers", "Random Teleporting Towers.csproj", "{D8FACB1E-C88B-4ABA-B28F-99C3ED86D1FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8FACB1E-C88B-4ABA-B28F-99C3ED86D1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FACB1E-C88B-4ABA-B28F-99C3ED86D1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FACB1E-C88B-4ABA-B28F-99C3ED86D1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FACB1E-C88B-4ABA-B28F-99C3ED86D1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4E91D11-4FCD-4294-80AB-D04A350FE0AE}
+	EndGlobalSection
+EndGlobal
