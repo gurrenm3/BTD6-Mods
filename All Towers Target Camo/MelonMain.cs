@@ -12,10 +12,10 @@ namespace All_Towers_Target_Camo
 
         public override void OnApplicationStart()
         {
-            MelonLogger.Log("Mod has finished loading");
+            MelonLogger.Msg("Mod has finished loading");
 
             string modName = Assembly.GetExecutingAssembly().GetName().Name;
-            MelonLogger.Log($"{modName} will not work in Races, Odyssey, and Public Co-op matches. This is for your own" +
+            MelonLogger.Msg($"{modName} will not work in Races, Odyssey, and Public Co-op matches. This is for your own" +
                 $" protection so you're account doesn't get in trouble.");
         }
 

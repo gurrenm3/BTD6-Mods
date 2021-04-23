@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Models.Bloons;
-using Assets.Scripts.Unity;
+﻿using Assets.Scripts.Unity;
 using System.Collections.Generic;
 
 namespace All_Towers_Target_Camo
