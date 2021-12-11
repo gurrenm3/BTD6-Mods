@@ -1,12 +1,13 @@
-﻿using Assets.Scripts.Unity.UI_New.Main;
+using Assets.Scripts.Unity.UI_New.Main;
 using Harmony;
+using System;
 
 namespace Free_Powers.Patches
 {
-    [HarmonyPatch(typeof(MainMenu), nameof(MainMenu.OnEnable))]
+    [HarmonyLib.HarmonyPatch(typeof(MainMenu), "Open")]
     internal class MainMenu_OnEnable
     {
-        [HarmonyPostfix]
+        [HarmonyLib.HarmonyPostfix]
         internal static void Postfix()
         {
             if (SessionData.CurrentSession.IsCheating)
